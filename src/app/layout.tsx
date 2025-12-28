@@ -17,6 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <Script
+          id="orchids-browser-logs"
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"
+          strategy="afterInteractive"
+          data-orchids-project-id="a098bc3a-ac02-46b8-94a8-f30854091088"
+        />
         <ErrorReporter />
         <Script
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"
