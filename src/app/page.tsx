@@ -309,6 +309,24 @@ export default function PhishSenseApp() {
                     )}
                   </Button>
 
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-8 border-t border-white/5">
+                    <p className="text-sm text-zinc-500 col-span-full">Try these examples:</p>
+                    <button 
+                      onClick={() => setInputText("Urgent: Your account has been suspended. Click here to verify your identity immediately or your funds will be lost.")}
+                      className="text-left p-4 rounded-xl bg-zinc-900/30 border border-white/5 hover:border-emerald-500/30 transition-all text-sm group"
+                    >
+                      <span className="text-zinc-300 group-hover:text-emerald-400 block font-medium mb-1">Suspicious Email</span>
+                      <span className="text-zinc-500 line-clamp-1">Urgent: Your account has been suspended...</span>
+                    </button>
+                    <button 
+                      onClick={() => setInputText("Hi Mom, just checking in to see if you're coming over for dinner on Sunday. Let me know!")}
+                      className="text-left p-4 rounded-xl bg-zinc-900/30 border border-white/5 hover:border-emerald-500/30 transition-all text-sm group"
+                    >
+                      <span className="text-zinc-300 group-hover:text-emerald-400 block font-medium mb-1">Safe Message</span>
+                      <span className="text-zinc-500 line-clamp-1">Hi Mom, just checking in to see if you're...</span>
+                    </button>
+                  </div>
+
                   <div className="p-4 bg-zinc-900/30 rounded-xl border border-white/5 flex items-start gap-4">
                     <Info className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <p className="text-sm text-zinc-400 italic">
